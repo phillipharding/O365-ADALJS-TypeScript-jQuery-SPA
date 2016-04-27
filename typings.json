@@ -1,0 +1,11 @@
+{
+  "dependencies": {},
+  "devDependencies": {},
+  "ambientDependencies": {
+    "chai": "registry:dt/chai#3.4.0+20160317120654",
+    "jquery": "github:DefinitelyTyped/DefinitelyTyped/jquery/jquery.d.ts#fab0b336b0414fac23963bde83f7d7077f6cf14c",
+    "microsoft.ajax": "registry:dt/microsoft.ajax#0.0.0+20160317120654",
+    "mocha": "registry:dt/mocha#2.2.5+20160317120654"
+  },
+  "ambientDevDependencies": {}
+}

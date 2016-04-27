@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>A SPA sample demonstrating AzureAD, ADALJS and TypeScript</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="./dist/myapp.min.css">
+</head>
+
+<body role="document">
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">O365-ADALJS-SPA</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="/#Home">Home</a></li>
+					<li><a href="/#Lists">Lists</a></li>
+					<li><a href="/#Messages">Messages</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="app-user-picture navbar-text"></li>
+					<li class="app-user navbar-text"></li>
+					<li><a href="javascript:;" class="app-logout">Logout</a></li>
+					<li><a href="javascript:;" class="app-login">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<br />
+	<div class="container" role="main">
+		<div class="jumbotron condensed">
+			<h1>Uber ADALJS, TypeScript, jQuery and CORS SPA Sample.</h1>
+			<p>This sample demonstrates how to take advantage of AdalJS for adding Azure AD authentication to your TypeScript apps built
+				with TypeScript and jQuery.</p>
+			<p>This sample also demonstrates how to use AdalJS to make authenticated HTTP requests to the Office 365 APIs with CORS.</p>
+		</div>
+		<div class="row">
+			<div class="col-xs-1">
+				<h4 class="panel-loading hidden">
+					<span class="glyphicon glyphicon-refresh spinning"></span><small>Loading...</small>
+				</h4>
+			</div>
+			<div class="col-xs-10">
+				<div class="alert alert-danger app-error hidden" role="alert"></div>
+				<div class="view-container fixed"></div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.9/js/adal.min.js"></script>
+	<script src="./dist/myapp.min.js"></script>
+</body>
+
+</html>
+<!--
+*********************************************************
+O365 jQuery and CORS Sample, https://github.com/OfficeDev/O365-jQuery-CORS
+Copyright (c) Microsoft Corporation
+All rights reserved.
+MIT License:
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+""Software""), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*********************************************************
+-->
